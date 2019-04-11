@@ -32,7 +32,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f4f8fb;
+    background: #d5dce2;
 }
 
 .img {
@@ -709,6 +709,8 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 0 6px 1px;
 }
 
+/*
+
 .post-full-image {
     margin: 0 -10vw -165px;
     background: var(--lightgrey) center center;
@@ -738,6 +740,8 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 }
 
+*/
+
 .post-full-content {
     position: relative;
     margin: 0 auto;
@@ -760,6 +764,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 }
 
+/*
 .post-full-content:before {
     content: "";
     position: absolute;
@@ -787,6 +792,8 @@ make sure this only happens on large viewports / desktop-ish devices.
     filter: blur(5px);
     transform: rotate(5deg);
 }
+
+*/
 
 .no-image .post-full-content {
     padding-top: 0;
