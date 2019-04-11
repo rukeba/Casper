@@ -2,16 +2,12 @@
     "name": "casper-ruslanium",
     "description": "Custom Photography theme for Ghost based on Casper.",
     "demo": "https://ruslanium.com",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "engines": {
         "ghost": ">=2.0.0",
         "ghost-api": "v2"
     },
     "license": "MIT",
-    "screenshots": {
-        "desktop": "assets/screenshot-desktop.jpg",
-        "mobile": "assets/screenshot-mobile.jpg"
-    },
     "scripts": {
         "dev": "gulp",
         "zip": "gulp zip",
