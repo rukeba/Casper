@@ -32,7 +32,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #d5dce2;
+    background: #f4f8fb;
 }
 
 .img {
@@ -1872,7 +1872,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content figure {
-    margin: 1.5em 0 3em;
+    margin: 1em 0;
 }
 
 .post-full-content figure img {
