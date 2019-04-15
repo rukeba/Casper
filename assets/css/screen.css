@@ -24,6 +24,8 @@ production stylesheet in assets/built/screen.css
 10. Subscribe Overlay
 11. Site Footer
 
+20. Ruslanium specific
+
 */
 
 
@@ -2284,4 +2286,16 @@ Usage (In Ghost editor):
     .site-footer-nav a:first-child {
         margin-left: 0;
     }
+}
+
+
+/* 20. Ruslanium specific
+/* ---------------------------------------------------------- */
+
+.post-template .fancybox-is-open .fancybox-bg {
+    opacity: 1;
+}
+
+img.start-fancybox {
+    cursor: zoom-in;
 }
