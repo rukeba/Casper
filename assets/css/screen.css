@@ -34,7 +34,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f4f8fb;
+    background: color(var(--bggrey));
 }
 
 .img {
@@ -114,8 +114,8 @@ body {
     position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #fff;
-    background: color(var(--darkgrey)) no-repeat center center;
+    /* color: #fff; */
+    /* background: color(var(--darkgrey)) no-repeat center center; */
     background-size: cover;
 }
 
@@ -128,7 +128,7 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
+    /* background: rgba(0,0,0,0.18); */
 }
 
 .site-header:after {
@@ -141,7 +141,7 @@ body {
     z-index: 10;
     display: block;
     height: 80px;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0));
+    background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0));
 }
 
 .site-header.no-image:before,
@@ -154,7 +154,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10vw 4vw;
+    padding: 0 4vw 7vw 4vw;
     min-height: 200px;
     max-height: 450px;
     text-align: center;
@@ -233,7 +233,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin-right: 24px;
     padding: 11px 0;
-    color: #fff;
+    color: color(var(--darkgrey));
     font-size: 1.7rem;
     line-height: 1em;
     font-weight: bold;
@@ -268,7 +268,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: color(var(--darkgrey));
     opacity: 0.8;
 }
 
@@ -332,8 +332,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .subscribe-button {
     display: block;
     padding: 4px 10px;
-    border: #fff 1px solid;
-    color: #fff;
+    border: color(var(--darkgrey)) 1px solid;
+    color: color(var(--darkgrey));
     font-size: 1.2rem;
     line-height: 1em;
     border-radius: 10px;
@@ -1942,7 +1942,7 @@ Usage (In Ghost editor):
 .kg-gallery-card + .kg-gallery-card,
 .kg-image-card.kg-width-wide + .kg-gallery-card,
 .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
-    margin: -2.25em 0 3em;
+    margin: 0 0 3em;
 }
 
 /* 8. Author Template
@@ -2246,7 +2246,7 @@ Usage (In Ghost editor):
 }
 
 .site-footer-content a {
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.8);
 }
 
 .site-footer-content a:hover {
