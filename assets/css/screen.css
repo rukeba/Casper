@@ -153,11 +153,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 0 4vw 7vw 4vw;
+    padding: 0 0 8vh 0;
     min-height: 200px;
     max-height: 450px;
-    text-align: center;
 }
 
 .site-title {
@@ -361,12 +359,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 @media (max-width: 700px) {
     .site-header {
-        padding-right: 0;
-        padding-left: 0;
     }
     .site-nav-left {
         margin-right: 0;
-        padding-left: 4vw;
     }
     .site-nav-right {
         display: none;
