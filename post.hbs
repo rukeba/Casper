@@ -27,9 +27,11 @@ into the {body} of the default.hbs template --}}
 
                 <h1 class="post-full-title">{{title}}</h1>
 
+                {{!--
                 {{#if custom_excerpt}}
                 <p class="post-full-custom-excerpt">{{custom_excerpt}}</p>
                 {{/if}}
+                --}}
 
                 {{!--
                 <div class="post-full-byline">
@@ -87,10 +89,9 @@ into the {body} of the default.hbs template --}}
                 --}}
             </header>
 
+            {{!--
             {{#if feature_image}}
             <figure class="post-full-image">
-                {{!-- This is a responsive image, it loads different sizes depending on device
-                https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
                 <img
                     srcset="{{img_url feature_image size="s"}} 300w,
                             {{img_url feature_image size="m"}} 600w,
@@ -104,6 +105,7 @@ into the {body} of the default.hbs template --}}
                 />
             </figure>
             {{/if}}
+            --}}
 
             <section class="post-full-content">
                 <div class="post-content">
@@ -179,6 +181,7 @@ into the {body} of the default.hbs template --}}
 
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 <script>
     $(document).ready(function () {
         // FitVids - start
@@ -195,6 +198,7 @@ into the {body} of the default.hbs template --}}
         // Replace nav with title on scroll - end
 
         // Hover on avatar
+        /*
         var hoverTimeout;
         $('.author-list-item').hover(function () {
             var $this = $(this);
@@ -211,6 +215,26 @@ into the {body} of the default.hbs template --}}
                 $this.children('.author-card').removeClass('hovered');
             }, 800);
         });
+        */
+
+        // initialize fancy box
+        var images_selector = '.post-full-content img.kg-image, .post-full-content .kg-gallery-image img';
+        $(images_selector)
+            .each(function(i,el){
+                $(el)
+                    .attr('data-src', $(el).attr('src'))
+                    .attr('data-fancybox', 'default-fancy-gallery')
+                    .addClass('start-fancybox');}
+            )
+            .promise()
+            .done(function(){ $(images_selector).fancybox({
+                hash: false,
+                buttons: ['close']
+            });
+        });
     });
 </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+
 {{/contentFor}}
