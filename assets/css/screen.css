@@ -1648,7 +1648,7 @@ Usage (In Ghost editor):
 /* 7.2. Members Subscribe Form
 /* ---------------------------------------------------------- */
 .subscribe-form {
-    margin: 1.5em 0;
+    margin: 0;
     padding: 6.5vw 7vw 8vw;
     border: color(var(--lightgrey) l(+10%)) 1px solid;
     text-align: center;
@@ -1666,7 +1666,7 @@ Usage (In Ghost editor):
 }
 
 .subscribe-form-description {
-    margin-bottom: 0.2em 0 1em;
+    margin: 0.2em 0 1em;
     color: var(--midgrey);
     font-size: 2.1rem;
     line-height: 1.55em;
@@ -2052,7 +2052,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content figure {
-    margin: 0.8em 0 3em;
+    margin: 0.8em 0 2em;
 }
 
 .post-full-content h1 + figure,
@@ -2075,7 +2075,8 @@ Usage (In Ghost editor):
     text-align: center;;
 }
 
-.post-full-content .kg-image-card img {
+.post-full-content .kg-image-card img,
+.post-full-content .kg-gallery-image img {
     cursor: zoom-in;
 }
 
@@ -2134,6 +2135,7 @@ Usage (In Ghost editor):
 .kg-image-card.kg-width-wide + .kg-gallery-card,
 .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
     /*margin: -1.5em 0 3em;*/
+    margin-top: -1.2em;
 }
 
 /* keep existing <pre> styles for code cards with captions */
