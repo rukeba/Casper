@@ -316,7 +316,7 @@ body {
     .site-header-background:not(.responsive-header-img) .site-nav:after,
     .site-nav-main .site-nav:after {
         right: 0;
-        background: linear-gradient(to right, color(var(--darkgrey) l(-5%) a(0)) 0%,color(var(--darkgrey) l(-5%)) 100%);
+        background: linear-gradient(to right, color(var(--midgrey) l(-5%) a(0)) 0%,color(var(--midgrey) l(-5%)) 100%);
     }
 
     .nav li:last-of-type {
@@ -2133,7 +2133,7 @@ Usage (In Ghost editor):
 .kg-gallery-card + .kg-gallery-card,
 .kg-image-card.kg-width-wide + .kg-gallery-card,
 .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
-    margin: -1.5em 0 3em;
+    /*margin: -1.5em 0 3em;*/
 }
 
 /* keep existing <pre> styles for code cards with captions */
