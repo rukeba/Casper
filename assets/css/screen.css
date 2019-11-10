@@ -168,6 +168,10 @@ body {
     font-weight: 700;
 }
 
+.site-title.site-title-tag {
+    text-transform: uppercase;
+}
+
 .site-logo {
     max-height: 55px;
 }
